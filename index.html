@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use flex to change position of div-boxes</title>
+    <style>
+        body{
+            background-color: bisque;
+        }
+        .flex-container div{
+            width:80px;
+            height: 40px;
+            border:5px solid blueviolet;
+            background-color: brown;
+            color: white;
+            text-align: center;
+            align-items: center;
+
+        }
+        /* პირველი მაგალითი */
+        .flex-container{
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+            justify-content:center;
+            margin-top: 250px;
+          
+        }
+        /* მეორე მაგალითი */
+
+        /* .flex-container :nth-child(1) {order: 12;}
+        .flex-container :nth-child(2) {order: 11;}
+        .flex-container :nth-child(3) {order: 10;}
+        .flex-container :nth-child(4) {order: 9;}
+        .flex-container :nth-child(5) {order: 8;}
+        .flex-container :nth-child(6) {order: 7;}
+        .flex-container :nth-child(7) {order: 6;}
+        .flex-container :nth-child(8) {order: 5;}
+        .flex-container :nth-child(9) {order: 4;}
+        .flex-container :nth-child(10) {order: 3;}
+        .flex-container :nth-child(11) {order: 2;}
+        .flex-container :nth-child(12) {order: 1;} */
+        h1{
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>ორნაირად არის გიო კოდი ნახე ერთი დაკომენტარებული მაქ </h1>
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+      </div>
+</body>
+</html>
